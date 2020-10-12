@@ -1,8 +1,9 @@
 import numpy as np
 
 from modules.pose import Pose, propagate_ids
+from ctypes import *
 try:
-    from pose_extractor import extract_poses
+    pose_extractor = windll.LoadLibrary("F:\\Github Repos\\lightweight-human-pose-estimation-3d-demo.pytorch\\modules\\pose_extractor.dll")
 except:
     print('#### Cannot load fast pose extraction, switched to legacy slow implementation. ####')
     from modules.legacy_pose_extractor import extract_poses
@@ -24,7 +25,7 @@ def get_root_relative_poses(inference_results):
     features, heatmap, paf_map = inference_results
 
     upsample_ratio = 4
-    found_poses = extract_poses(heatmap[0:-1], paf_map, upsample_ratio)[0]
+    found_poses = pose_extractor.extract_poses(heatmap[0:-1], paf_map, upsample_ratio)[0]
     # scale coordinates to features space
     found_poses[:, 0:-1:3] /= upsample_ratio
     found_poses[:, 1:-1:3] /= upsample_ratio

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\Github Repos\lightweight-human-pose-estimation-3d-demo.pytorch\pose_extractor\build\tmp\CMakeFiles\297efbf75d492e5b035d6fb00dac2f53\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1DAEDBD7-3485-36B8-8081-612130422F6D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+﻿wrapper.obj : warning LNK4197: 'PyInit_pose_extractor' 내보내기가 여러 번 지정되었습니다. 첫째 사양을 사용합니다.
+     F:/Github Repos/lightweight-human-pose-estimation-3d-demo.pytorch/pose_extractor/build/tmp/pose_extractor.lib 라이브러리 및 F:/Github Repos/lightweight-human-pose-estimation-3d-demo.pytorch/pose_extractor/build/tmp/pose_extractor.exp 개체를 생성하고 있습니다.
+  pose_extractor.vcxproj -> F:\Github Repos\lightweight-human-pose-estimation-3d-demo.pytorch\pose_extractor\build\pose_extractor.dll
